@@ -4,7 +4,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import MenuBookTwoToneIcon from "@mui/icons-material/MenuBookTwoTone";
 import { Tab, Tabs } from "@mui/material";
-import {NavLink} from 'react-router-dom'
+import {NavLink,Link} from 'react-router-dom'
 
 const Header = () => {
   const [value, setValue] = useState();
@@ -12,13 +12,16 @@ const Header = () => {
     <div>
       <AppBar sx={{backgroundColor:'#232F3D'}} position="sticky" color="primary">
         <Toolbar>
-        <Tab 
-          LinkComponent={NavLink} to ="/" 
-          label=
-            <Typography variant="h6">
-              <MenuBookTwoToneIcon />
-            </Typography>
-        />
+
+          <Typography>
+              <Tab LinkComponent={NavLink} to ="/" label={<MenuBookTwoToneIcon/>}/>
+          </Typography>
+        
+      
+        
+          
+         
+        
           
           <Tabs
           sx={{ml:"auto"}}

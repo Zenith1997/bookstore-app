@@ -13,27 +13,22 @@ const Header = () => {
       <AppBar sx={{backgroundColor:'#232F3D'}} position="sticky" color="primary">
         <Toolbar>
 
+          
           <Typography>
-              <Tab LinkComponent={NavLink} to ="/" label={<MenuBookTwoToneIcon/>}/>
-          </Typography>
-        
-      
-        
+                <Tab LinkComponent={NavLink} to ="/" label={<MenuBookTwoToneIcon/>}/>
+            </Typography>
+            <Tabs
+            sx={{ml:"auto"}}
+              textColor="inherit"
+              value={value}
+              onChange={(e, val) => setValue(val)}
+              indicatorColor="secondary"
+            >
+              <Tab LinkComponent={NavLink} to ="/add" label="Add product"/>
+              <Tab  LinkComponent={NavLink} to ="/books"  label="Books"/>
+              <Tab  LinkComponent={NavLink} to ="/aboutus" label="About Us"/>
+            </Tabs>
           
-         
-        
-          
-          <Tabs
-          sx={{ml:"auto"}}
-            textColor="inherit"
-            value={value}
-            onChange={(e, val) => setValue(val)}
-            indicatorColor="secondary"
-          >
-            <Tab LinkComponent={NavLink} to ="/add" label="Add product"/>
-            <Tab  LinkComponent={NavLink} to ="/books"  label="Books"/>
-            <Tab  LinkComponent={NavLink} to ="/aboutus" label="About Us"/>
-          </Tabs>
         </Toolbar>
       </AppBar>
     </div>

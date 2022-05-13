@@ -26,7 +26,7 @@ const addBook =async(req,res,next) =>{
             image
         });
         await book.save();
-        console.log("sdfdf")
+        console.log("Book saved")
     }catch(err){
         console.log(err)
     }

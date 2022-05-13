@@ -1,12 +1,13 @@
 import "./Home.css"
 import React from 'react';
 import { Button } from "./Button";
+import Footer from "./Footer";
 
 
 const Home = () => {
   return (
+    <div>
       <div className='home-container'>
-        <image src='./images/background.jpg' />
         <h1>Book store</h1>
         <p>
           Books have allowed me to travel way more than my passport.
@@ -28,7 +29,12 @@ const Home = () => {
             About Us
           </Button>
         </div>
-      </div>
+     
+      </div> 
+      <Footer/> 
+    </div>
+         
+      
   )
 }
 

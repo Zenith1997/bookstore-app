@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import AddBook from "./components/AddBook";
+import BookDetail from "./components/Books/BookDetails";
 import Books from "./components/Books/Books";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -16,10 +17,12 @@ function App() {
   
      <main>
      <Routes>
-     <Route path ="/" element ={<Home/>} exact/>
-     <Route path ="/add" element ={<AddBook/>} exact/>
-     <Route path ="/books" element ={<Books/>} exact/>
-     <Route path ="/aboutus" element ={<About/>} exact/>
+     <Route path="/" element={<Home />} exact />
+     <Route path="/add" element={<AddBook />} exact />
+     <Route path="/books" element={<Books />} exact />
+     <Route path="/about" element={<About />} exact />
+     <Route path="/books/:id" element={<BookDetail/>} exact />
+   
 
      </Routes>
      </main>

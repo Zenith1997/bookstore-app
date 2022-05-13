@@ -1,23 +1,35 @@
 import "./Home.css"
 import React from 'react';
+import { Button } from "./Button";
 
 
 const Home = () => {
   return (
-    <div>
-      <div className='content'>
-        <div className="heading">
+      <div className='home-container'>
+        <image src='./images/background.jpg' />
         <h1>Book store</h1>
+        <p>
+          Books have allowed me to travel way more than my passport.
+        </p>     
+        <div className="home-Btns">
+          <Button 
+            className='btns' 
+            buttonStyle='btn--outline'
+            buttonSize='btn--large'
+          >
+            Find Books
+          </Button>
+          <Button
+            className='btns'
+            buttonStyle='btn--primary'
+            buttonSize='btn--large'
+            onClick={console.log('hey')}
+          >
+            About Us
+          </Button>
         </div>
-    
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi numquam nemo, maiores cumque expedita amet? Aut nihil ex nesciunt inventore perferendis totam maxime quod. Officiis consequatur non repellendus ratione hic.
-      </p>
       </div>
-     
-          <button>sfgg</button>
-    </div>
   )
 }
 
-export default Home
+export default Home;

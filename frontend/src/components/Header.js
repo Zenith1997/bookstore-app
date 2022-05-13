@@ -12,9 +12,14 @@ const Header = () => {
     <div>
       <AppBar sx={{backgroundColor:'#232F3D'}} position="sticky" color="primary">
         <Toolbar>
-          <Typography variant="h6">
-            <MenuBookTwoToneIcon />
-          </Typography>
+        <Tab 
+          LinkComponent={NavLink} to ="/" 
+          label=
+            <Typography variant="h6">
+              <MenuBookTwoToneIcon />
+            </Typography>
+        />
+          
           <Tabs
           sx={{ml:"auto"}}
             textColor="inherit"

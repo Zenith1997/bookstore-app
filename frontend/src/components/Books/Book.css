@@ -63,3 +63,9 @@ border-radius: 10px;
     
    
 }
+.addbook{
+    z-index: 1;
+    background-image: url("../images/addbook.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

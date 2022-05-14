@@ -6,6 +6,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import "./Books/Book.css"
 import { Box } from "@mui/system";
 import axios from "axios";
 import React, { useState } from "react";
@@ -50,7 +51,10 @@ const AddBook = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div> 
+    <h1>Update details</h1>
+     <form className="addbook" onSubmit={handleSubmit}>
+    
       <Box
         display="flex"
         flexDirection="column"
@@ -120,6 +124,8 @@ const AddBook = () => {
         </Button>
       </Box>
     </form>
+    </div>
+  
   );
 };
 

@@ -6,6 +6,6 @@ const router = express.Router();
 router.get("/",booksController.getAllBooks)
 router.get("/:id",booksController.getById)
 router.post("/",booksController.addBook)
-router.post("/:id",booksController.UpdateBook)
+router.put("/:id", booksController.UpdateBook);
 router.delete("/:id",booksController.deleteBook)
 module.exports = router;  

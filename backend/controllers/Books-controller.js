@@ -55,20 +55,18 @@ const UpdateBook = async (req,res,next) =>{
     const id = req.params.id
     let book;
     try{
-        book = Book.findByIdAndUpdate(id,{
+        book = await Book.findByIdAndUpdate(id,{
             name,
             author,
             description,
             available,
             price,
-            image
+            image,
         });
-        book = await book.save()
+        book = await book.save();
     }
-  
     catch(err){
         console.log(err);
-
     }
     if(!book){
       return  res.status(404).json({message:"Unable to update"})
@@ -82,7 +80,7 @@ const deleteBook = async(req,res,next) =>{
     const id = req.params.id;
     let book;
     try{
-        book = Book.findByIdAndRemove(id);
+        book =  await Book.findByIdAndRemove(id);
     }catch(err){
         console.log(err)
     }

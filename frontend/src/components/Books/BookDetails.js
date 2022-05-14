@@ -11,20 +11,23 @@ import {
   import { useNavigate, useParams } from "react-router-dom";
   
   const BookDetail = () => {
+    
     const [inputs, setInputs] = useState();
     const id = useParams().id;
     const [checked, setChecked] = useState(false);
     const history = useNavigate();
-    useEffect(() => {
+    useEffect(() => { 
       const fetchHandler = async () => {
         await axios
           .get(`http://localhost:5000/books/${id}`)
           .then((res) => res.data)
           .then((data) => setInputs(data.book));
+       
       };
+
       fetchHandler();
     }, [id]);
-  
+
     const sendRequest = async () => {
       await axios
         .put(`http://localhost:5000/books/${id}`, {
@@ -47,7 +50,7 @@ import {
         [e.target.name]: e.target.value,
       }));
     };
-  
+  console.log(inputs);
     return (
       <div>
         {inputs && (

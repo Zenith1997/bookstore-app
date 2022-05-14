@@ -14,7 +14,7 @@ const Books = () => {
   }, []);
 
   return (
-    <div>
+    <div className="books">
       <ul>
         {books &&
           books.map((book,i) => (

@@ -2,6 +2,7 @@ import "./Home.css"
 import React from 'react';
 import { Button } from "./Button";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -13,13 +14,17 @@ const Home = () => {
           Books have allowed me to travel way more than my passport.
         </p>     
         <div className="home-Btns">
-          <Button 
-            className='btns' 
-            buttonStyle='btn--outline'
-            buttonSize='btn--large'
-          >
-            Find Books
-          </Button>
+        
+     
+        <Button 
+        className='btns' 
+        buttonStyle='btn--outline'
+        buttonSize='btn--large'
+      >
+        Find Books
+      </Button>
+    
+      
           <Button
             className='btns'
             buttonStyle='btn--primary'

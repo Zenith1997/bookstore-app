@@ -53,6 +53,7 @@ border-radius: 10px;
 }
 
 .books{
+    margin-top: 0;
     z-index: 1;
     background-image: url("../images/bk2.jpg");
     background-repeat: no-repeat;
@@ -64,8 +65,7 @@ border-radius: 10px;
    
 }
 .addbook{
-    z-index: 1;
-    background-image: url("../images/addbook.jpg");
+    background-image: url("../images/bk3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

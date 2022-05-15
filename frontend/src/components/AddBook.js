@@ -51,9 +51,9 @@ const AddBook = () => {
   };
 
   return (
-    <div> 
-    <h1>Update details</h1>
-     <form className="addbook" onSubmit={handleSubmit}>
+    <div className="addbook"> 
+   
+     <form   style={{marginTop: '-80px'}}  onSubmit={handleSubmit}>
     
       <Box
         display="flex"
